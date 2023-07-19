@@ -1,7 +1,6 @@
  FROM ubuntu:latest
-
-# Copy the HTML and CSS files to a custom directory
 COPY index.html style.css /usr/share/nginx/html/
+
 
 # Create the "img" folder and copy all image files to it
 RUN mkdir /usr/share/nginx/html/img

@@ -1,5 +1,5 @@
  FROM ubuntu:latest
-COPY index.html style.css /usr/share/nginx/html/
+COPY index.html styles.css /usr/share/nginx/html/
 
 
 # Create the "img" folder and copy all image files to it

@@ -11,5 +11,7 @@ COPY index.html styles.css /usr/share/nginx/html/
 RUN mkdir /usr/share/nginx/html/img
 COPY img/* /usr/share/nginx/html/img/
 
-# Expose port 8000 to allow external access
-EXPOSE 8000
+# Expose port 80 to allow external access
+EXPOSE 80
+# Start Nginx when the container runs
+CMD ["nginx", "-g", "daemon off;"]

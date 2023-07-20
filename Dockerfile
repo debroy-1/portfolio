@@ -12,8 +12,8 @@ RUN mkdir /usr/share/nginx/html/img
 COPY img/* /usr/share/nginx/html/img/
 
  
-# Expose port 8000 to allow external access
-EXPOSE 8000
+# Expose port 80 to allow external access
+EXPOSE 80
 
 # Start Nginx and listen on port 8000 when the container runs
 CMD ["nginx", "-g", "daemon off;", "-c", "/etc/nginx/nginx.conf", "-p", "/etc/nginx"]

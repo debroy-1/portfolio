@@ -5,11 +5,11 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y nginx
 
 # Copy the index.html and styles.css files to the Nginx web root
-COPY index.html styles.css /usr/share/nginx/html/
+COPY index.html styles.css  /var/www/html
 
 # Create the "img" folder and copy all image files to it
-RUN mkdir /usr/share/nginx/html/img
-COPY img/* /usr/share/nginx/html/img/
+RUN mkdir  /var/www/html/img
+COPY img/*  /var/www/html/html/img/
 
  
 # Expose port 8000 to allow external access

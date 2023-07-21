@@ -9,7 +9,7 @@ COPY index.html styles.css  /var/www/html
 
 # Create the "img" folder and copy all image files to it
 RUN mkdir  /var/www/html/img
-COPY img/*  /var/www/html/html/img/
+COPY img/*  /var/www/html/img/
 
  
 # Expose port 8000 to allow external access

@@ -1,19 +1,10 @@
- # Use the official Ubuntu base image
-FROM ubuntu:latest
+ # Use the official Apache HTTP Server base image
+FROM httpd:latest
 
-# Install Nginx
-RUN apt-get update && apt-get install -y nginx
+# Copy your website files to the container's document root
+COPY index.html /usr/local/apache2/htdocs/
+COPY styles.css /usr/local/apache2/htdocs/
+COPY img/ /usr/local/apache2/htdocs/img/
 
-# Copy the index.html and styles.css files to the Nginx web root
-COPY index.html styles.css  /var/www/html/
-
-# Create the "img" folder and copy all image files to it
-RUN mkdir  /var/www/html/img
-COPY img/*  /var/www/html/img/
-
- 
-# Expose port 8000 to allow external access
-EXPOSE 8000
-
-# Start Nginx and listen on port 8000 when the container runs
-CMD ["nginx", "-g", "daemon off;", "-c", "/etc/nginx/nginx.conf", "-p", "/etc/nginx"]
+# Expose the port used by Apache (default is 80)
+EXPOSE 80

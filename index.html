@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="containr">
+
+            <nav>
+
+                <img src="img/logo.png" class="logo">
+                <ul>
+                    <li><a href="#fr">Home</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="VideoCv.html">VideoCv</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    </nav>
+    </div>
+    </div>
+    <main>
+        <div class="fr">
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, it's <span class="pi">Deb Roy</span> here.
+                    I am charming & enthusiastic.<br>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="https://hdhv.s3.ap-south-1.amazonaws.com/Resume-2.pdf"download target="_blank"> <button>Download CV</button></a>
+                        <a href="#contact"> <button>Contact Me</button></a>
+
+                    </div>
+                </div>
+                <div class="rightSection">
+                    <img src="img/about-img.png" alt="">
+                </div>
+            </section>
+        </div>
+
+        <!-- ------------about----------- -->
+        <div class="About">
+            <section class="firstS">
+                <div class="leftS">
+
+                    <img src="img/deb.png" alt="">
+                </div>
+                <div class="rightS">
+
+                    <h1>About Me</h1>
+                    <p> My journey as a developer is fueled by passion, curiosity.
+                        Through mycontinuous learning and experimentation, I aim to evolve into a seasoned developer
+                        capable of
+                        making a positive impact in the tech world.
+                    </p>
+                    <div class="tab-tittle">
+                        <div class="tab-links active-link " onclick="opentab('Skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('Expertise')">Expertise</div>
+                        <div class="tab-links" onclick="opentab('Education')">Education</div>
+                    </div>
+                    <div class="tabs-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>API Developer</span> <br>restful api,Spring Boot Api developer</li>
+                            <li><span>AWS Learner</span><br>worked on services like ec2,s3,route etc</li>
+                            <li><span>Devops developer</span><br>worked on ci/cd architecture and learned many more
+                                concept
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs-contents" id="Expertise">
+                        <ul>
+                            <li><span>framework</span> <br>Spring Boot,bootstarp</li>
+                            <li><span>aws</span><br>lamda, ec2,s3,route etc</li>
+                            <li><span>technology</span><br>jenkins,docker,github,kubernates</li>
+                            <li><span>language</span><br>java,css,html</li>
+                        </ul>
+                    </div>
+                    <div class="tabs-contents" id="Education">
+                        <ul>
+                            <li><span>schooling</span> <br>kendriya vidyalaya iit kharagpur</li>
+                            <li><span>AWS Learner</span><br>aws acadamy,udemy</li>
+                            <li><span>graduation</span><br>Ramkrishna Mahato Government Engineering College</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        </div>
+        <!-- _--------------------portfolio-------------- -->
+        <div id="portfolio">
+            <div class="container1">
+                <h1 class="subtitle">My work</h1>
+                <br>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/p-1.png" alt="">
+                        <div class="layer">
+                            <h3>news App (api)</h3>
+                            <p>Built News Collection API using Fetch API, honing API <br> and data handling
+                                expertise and deployed with aws .</p>
+                            <a href="https://s3.ap-south-1.amazonaws.com/debroy.click/frontend/1st.html" target="_blank"
+                                class="al"><img src="img/rocket-ship.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/p-2.png" alt="">
+                        <div class="layer">
+                            <h3> blogging API</h3>
+                            <p> Developed CRUD-based REST API for blog app using Spring Boot.</p>
+                            <a href="https://github.com/debroy-1/ApiForAnyApplication.git" target="_blank"
+                                class="al"><img src="img/rocket-ship.png"></a>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/p-5.png" alt="">
+                        <div class="layer">
+                            <h3>Portfolio website</h3>
+                            <p>Created portfolio website using Docker, Docker Hub, and Jenkins <br> with CI/CD
+                                architecture.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------contact---------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-tittle">contact me</h1>
+                        <div class="contact-info">
+                            <img src="img/envelope.png" id="ene">
+                            <p>debroy3012@gmail.com</p>
+                        </div>
+                        <div class="contact-info">
+                            <img src="img/telephone.png" id="tel">
+                            <p>6289888497</p>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="3" placeholder="Type a Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['API Developer', 'AWS Learner', 'Java (Spring Boot Dev.)'],
+            typeSpeed: 70,
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tabs-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting to the server
+
+            // Simulate submission by displaying an alert and resetting the form after 5 seconds
+            setTimeout(function () {
+                alert('Form submitted successfully .');
+                document.querySelector('form').reset(); // Reset the form fields
+            }, 5000);
+        });
+    </script>
+ <script>
+     // Get references to the menu and cross icons and the navigation ul element
+const menuIcon = document.querySelector('.fa-bars');
+const crossIcon = document.querySelector('.fa-xmark');
+const navList = document.querySelector('nav ul');
+
+// Event listener for the menu icon (to show/hide the navigation)
+menuIcon.addEventListener('click', () => {
+    navList.style.display = 'block'; // Display the navigation
+});
+
+crossIcon.addEventListener('click', () => {
+    navList.style.display = 'none'; // Hide the navigation
+});
+
+// Event listener for clicking any of the links inside the navigation
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        if (window.innerWidth < 768) {
+            navList.style.display = 'none'; // Hide the navigation on link click for smaller screens
+        }
+        
+    });
+});
+
+</script>
+
+
+
+</body>
+
+</html>
